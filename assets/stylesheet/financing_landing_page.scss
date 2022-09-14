@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/ProximaNova-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/Proxima\ Nova\ Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/Proxima\ Nova\ Extrabold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/Proxima\ Nova\ Thin.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima Nova';
+    //border: 1px solid red;
+}
+
+li {
+    list-style-type: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+
+    header {
+        .sub_nav {
+            align-items: center;
+            background-color: #272634;
+            display: flex;
+            height: 42px;
+            justify-content: center;
+            padding: 0 40px;
+            width: 100%;
+
+            .cohort_text {
+                color: #fff;
+            }
+
+            .sub_nav_actions {
+                align-items: center;
+                display: flex;
+                margin-left: auto;
+
+                .phone_number {
+                    color: #05aae1;
+                }
+
+                .talk_to_us_btn {
+                    background-color: transparent;
+                    border: 1px solid #05aae1;
+                    color: #fff;
+                    font: 16px/20px "Proxima Nova";
+                    height: 36px;
+                    margin-left: 66px;
+                    width: 120px;
+                }
+            }
+        }
+
+        nav {
+            align-items: center;
+            background-color: #1d1f21;
+            display: flex;
+            height: 56px;
+            padding: 0 40px 0 30px;
+
+            .coding_dojo_logo {
+                background: url(/assets/images/coding_dojo_logo.png) no-repeat center;
+                display: inline-block;
+                height: 30px;
+                width: 99px;
+            }
+
+            .nav_links {
+                display: flex;
+                justify-content: center;
+                margin: 0 46px 0 180px;
+
+                button {
+                    align-items: center;
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+                    display: flex;
+                    margin-right: 45px;
+
+                    &::after {
+                        background: url(/assets/images/caret_down.svg) no-repeat center;
+                        content: '';
+                        display: inline-block;
+                        height: 5px;
+                        margin-left: 10px;
+                        width: 11px;
+                    }
+                }
+            }
+
+            .nav_apply_btn {
+                margin-left: auto;
+                width: 120px;
+                height: 36px;
+                color: #fff;
+                border: none;
+                border-radius: 2px;
+                background-color: #05aae1;
+            }
+        }
+
+        .header_banner {
+            background: url(/assets/images/financing_101_banner.png) no-repeat center / cover;
+            background-color: #1d1f21;
+            height: 485px;
+            padding: 140px;
+
+            h1 {
+                width: 575px;
+                height: 147px;
+                color: #fff;
+                font: 64px/74px "Proxima Nova";
+                font-weight: 700;
+            }
+
+            p {
+                color: #fff;
+                width: 456px;
+                height: 54px;
+                font: 18px/24px "Proxima Nova";
+                font-weight: 400;
+            }
+        }
+    }
+
+    .funding_method_section {
+        height: 1085px;
+        background-color: #f8faff;
+        padding: 90px 140px;
+
+        h2 {
+            color: #333333;
+            font: 40px/44px "Proxima Nova";
+            font-weight: 700;
+            width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .funding_methods {
+            width: 677px;
+            height: 130px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin-bottom: 18px;
+        }
+    }
+}
