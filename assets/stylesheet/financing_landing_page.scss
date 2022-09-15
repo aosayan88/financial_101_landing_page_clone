@@ -452,6 +452,15 @@ a {
             font: 40px/44px "Proxima Nova";
             font-weight: bold;
         }
+
+        p {
+            align-items: left;
+            font: 18px/27px "Proxima Nova";
+            font-weight: 400;
+            letter-spacing: 0.6px;
+            margin-top: 62px;
+            width: 271px;
+        }
     }
 
     .thinking_about_funding_section {
@@ -515,14 +524,12 @@ a {
 
                 p {
                     color: #fff;
-                    font: 18px/27px "Proxima Nova";
                     font-weight: 400;
-                    width: 406px;
+                    font: 18px/27px "Proxima Nova";
                     text-align: left;
+                    width: 407px;
                 }
             }
-
-            
         }
     }
 
@@ -550,5 +557,37 @@ a {
         width: 883px;
         height: 336px;
         padding: 78px 0 0 162px;
+
+        h2 {
+            font: 31px/34px "Proxima Nova";
+            font-weight: bold;
+            color: #333333;
+            letter-spacing: 0.6px;
+        }
+
+        .profile_container {
+            display: flex;
+            margin-top: 21px;
+
+            .profile_photo {
+                width: 49px;
+                height: 56px;
+                background-color: #C4C4C4;
+                border-radius: 5px;
+                margin-right: 20px;
+            }
+
+            .profile {
+                display: flex;
+                flex-direction: column;
+
+                .profile_name {
+                    font: 19px/23px "Proxima Nova";
+                    font-weight: bold;
+                    color: #333333;
+
+                }
+            }
+        }
     }
 }

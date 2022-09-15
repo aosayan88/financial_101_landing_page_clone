@@ -325,6 +325,13 @@ a {
       color: #333333;
       font: 40px/44px "Proxima Nova";
       font-weight: bold; }
+    #wrapper .fund_your_bootcamp_section p {
+      align-items: left;
+      font: 18px/27px "Proxima Nova";
+      font-weight: 400;
+      letter-spacing: 0.6px;
+      margin-top: 62px;
+      width: 271px; }
   #wrapper .thinking_about_funding_section {
     height: 1231px;
     background-color: #505170;
@@ -368,10 +375,10 @@ a {
         margin-top: 20px; }
       #wrapper .thinking_about_funding_section .steps_to_coding_bootcamp div p {
         color: #fff;
-        font: 18px/27px "Proxima Nova";
         font-weight: 400;
-        width: 406px;
-        text-align: left; }
+        font: 18px/27px "Proxima Nova";
+        text-align: left;
+        width: 407px; }
   #wrapper .top_tech_names_section {
     height: 391px;
     background-color: #f8faff;
@@ -390,3 +397,24 @@ a {
     width: 883px;
     height: 336px;
     padding: 78px 0 0 162px; }
+    #wrapper .testimonial_section h2 {
+      font: 31px/34px "Proxima Nova";
+      font-weight: bold;
+      color: #333333;
+      letter-spacing: 0.6px; }
+    #wrapper .testimonial_section .profile_container {
+      display: flex;
+      margin-top: 21px; }
+      #wrapper .testimonial_section .profile_container .profile_photo {
+        width: 49px;
+        height: 56px;
+        background-color: #C4C4C4;
+        border-radius: 5px;
+        margin-right: 20px; }
+      #wrapper .testimonial_section .profile_container .profile {
+        display: flex;
+        flex-direction: column; }
+        #wrapper .testimonial_section .profile_container .profile .profile_name {
+          font: 19px/23px "Proxima Nova";
+          font-weight: bold;
+          color: #333333; }

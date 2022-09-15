@@ -53,7 +53,7 @@ function gaugeProgress(){
         $(".open_house_btn").addClass("active");
         gauge_btn.addClass("active");
     }
-    
+
     gauge_btn.closest(".savings_gauge").find(".savings_value").text(`$${saved_value}`);
     gauge_btn.closest(".savings_gauge").find(".gauge_indicator").css("left", `${gauge_indicator}px`);
 };
