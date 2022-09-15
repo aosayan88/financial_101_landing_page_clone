@@ -54,7 +54,7 @@ a {
         height: 441px;
         padding: 60px 70px;
         position: fixed;
-        right: 695px;
+        right: 25%;
         top: 200px;
         width: 406px;
 
@@ -95,7 +95,7 @@ a {
 
             .cohort_text {
                 color: #fff;
-                
+                margin-left: 550px;
             }
 
             .sub_nav_actions {
@@ -107,7 +107,6 @@ a {
                     color: #05aae1;
                     font: 16px/20px "Proxima Nova";
                     font-weight: 400;
-
 
                     &:before {
                         background: url(/assets/images/phone_icon.svg) no-repeat center;
@@ -149,7 +148,7 @@ a {
             .nav_links {
                 display: flex;
                 justify-content: center;
-                margin: 0 46px 0 180px;
+                margin: 0 0 0 180px;
 
                 button {
                     align-items: center;
@@ -170,6 +169,11 @@ a {
                         width: 11px;
                     }
                 }
+            }
+
+            a {
+                color: #fff;
+                margin-right: 66px;
             }
 
             .nav_apply_btn {
@@ -220,19 +224,20 @@ a {
             margin-bottom: 40px;
         }
 
-        .function_methods_container {
+        .funding_methods_container {
             width: 677px;
-            height: 130px;
             background-color: #fff;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             margin-bottom: 18px;
             display: flex;
+            flex-direction: column;
 
             .funding_method_header {
                 display: flex;
                 align-items: center;
                 padding: 0 47px 0 50px;
                 width: 100%;
+                height: 130px;
 
                 .pay_in_full_logo {
                     background: url('/assets/images/PayInFull.png') no-repeat center / cover;
@@ -291,6 +296,17 @@ a {
                     }
                 }
             }
+
+            .funding_method_content {
+                padding: 0 100px 0 50px;
+                font: 16px/22px "Proxima Nova";
+                font-weight: 400;
+
+                .sub_funding_method_content {
+                    font: 14px/22px "Proxima Nova";
+                    font-weight: 400;
+                }
+            }
         }
     }
 
@@ -298,11 +314,131 @@ a {
         height: 463px;
         background-color: #505170;
         padding: 70px 140px;
+        position: relative;
 
         h2 {
             color: #fff;
             font: 40px/44px "Proxima Nova";
             font-weight: bold;
+        }
+
+        .savings_gauge {
+            align-items: flex-start;
+            color: #fff;
+            display: flex;
+            justify-content: start;
+            position: relative;
+
+            .gauge_container {
+                margin-right: 5px;
+                text-align: center;
+                width: 130px;
+            }
+
+            button {
+                background-color: #3A6C92;
+                border: none;
+                color: #fff;
+                height: 41px;
+                margin-top: 15px;
+                position: relative;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .gauge_indicator {
+                background: #D9D9D9;
+                border: none;
+                display: inline-block;
+                height: 50px;
+                position: absolute;
+                top: 35px;
+                left: 130px;
+                width: 5px;
+
+                &::after {
+                    background-color: #D9D9D9;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    content: '';
+                    top: 48px;
+                    left: -4.55px;
+                    position: absolute;
+                }
+            }
+
+            .early_reg_btn {
+                position: relative;
+                background-color: #05aae1;
+
+                &::before {
+                    background: #05aae1;
+                    border-radius: 50%;
+                    border: none;
+                    content: '';
+                    display: inline-block;
+                    height: 50px;
+                    left: -10px;
+                    position: absolute;
+                    top: -5px;
+                    width: 50px;
+                }
+            }
+
+            .active {
+                background-color: #05aae1;
+            }
+
+            .pay_in_full_btn {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+            p {
+                font: 12px/16px "Proxima Nova";
+                font-weight: 300;
+                margin-top: 20px;
+                text-align: left;
+                width: 80%;
+            }
+
+            .savings {
+                margin: 15px 30px;
+
+                p {
+                    font: 18px/22px "Proxima Nova";
+                    font-weight: 300;
+                }
+
+                .savings_value {
+                    font: 26px/30px "Proxima Nova";
+                    font-weight: bold;
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            
+        }
+
+        .gauge_savings_note {
+            color: #fff;
+            font: 10px/14px "Proxima Nova";
+            font-weight: 300;
+            width: 538px;
+        }
+
+        .cat_logo {
+            background: url('/assets/images/border_cat.png') no-repeat center / cover;
+            width: 31px;
+            height: 20px;
+            position: absolute;
+            bottom: -7px;
+            left: 800px;
         }
     }
 
@@ -362,7 +498,7 @@ a {
             }
 
             .start_coding_bootcamp_logo {
-                background: url('/assets/images/start_coding_bootcamp,png') no-repeat center / cover;
+                background: url('/assets/images/start_coding_bootcamp.png') no-repeat center / cover;
                 width: 152px;
                 height: 152px;
                 margin-top: 20px;

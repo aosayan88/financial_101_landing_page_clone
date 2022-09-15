@@ -41,7 +41,7 @@ a {
     height: 441px;
     padding: 60px 70px;
     position: fixed;
-    right: 695px;
+    right: 25%;
     top: 200px;
     width: 406px; }
     #wrapper .fixed_side_card h2 {
@@ -71,7 +71,8 @@ a {
     padding: 0 40px;
     width: 100%; }
     #wrapper header .sub_nav .cohort_text {
-      color: #fff; }
+      color: #fff;
+      margin-left: 550px; }
     #wrapper header .sub_nav .sub_nav_actions {
       align-items: center;
       display: flex;
@@ -110,7 +111,7 @@ a {
     #wrapper header nav .nav_links {
       display: flex;
       justify-content: center;
-      margin: 0 46px 0 180px; }
+      margin: 0 0 0 180px; }
       #wrapper header nav .nav_links button {
         align-items: center;
         background-color: transparent;
@@ -127,6 +128,9 @@ a {
           height: 5px;
           margin-left: 10px;
           width: 11px; }
+    #wrapper header nav a {
+      color: #fff;
+      margin-right: 66px; }
     #wrapper header nav .nav_apply_btn {
       margin-left: auto;
       width: 120px;
@@ -162,63 +166,157 @@ a {
       font-weight: 700;
       width: 600px;
       margin-bottom: 40px; }
-    #wrapper .funding_method_section .function_methods_container {
+    #wrapper .funding_method_section .funding_methods_container {
       width: 677px;
-      height: 130px;
       background-color: #fff;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       margin-bottom: 18px;
-      display: flex; }
-      #wrapper .funding_method_section .function_methods_container .funding_method_header {
+      display: flex;
+      flex-direction: column; }
+      #wrapper .funding_method_section .funding_methods_container .funding_method_header {
         display: flex;
         align-items: center;
         padding: 0 47px 0 50px;
-        width: 100%; }
-        #wrapper .funding_method_section .function_methods_container .funding_method_header .pay_in_full_logo {
+        width: 100%;
+        height: 130px; }
+        #wrapper .funding_method_section .funding_methods_container .funding_method_header .pay_in_full_logo {
           background: url("/assets/images/PayInFull.png") no-repeat center/cover;
           width: 88.5px;
           height: 88.5px;
           margin-right: 45px; }
-        #wrapper .funding_method_section .function_methods_container .funding_method_header .installment_plans_logo {
+        #wrapper .funding_method_section .funding_methods_container .funding_method_header .installment_plans_logo {
           background: url("/assets/images/installment_plans.png") no-repeat center/cover;
           width: 88.5px;
           height: 88.5px;
           margin-right: 45px; }
-        #wrapper .funding_method_section .function_methods_container .funding_method_header .ascent_logo {
+        #wrapper .funding_method_section .funding_methods_container .funding_method_header .ascent_logo {
           background: url("/assets/images/ascent_financing_logo.png") no-repeat center/cover;
           width: 103px;
           height: 54px;
           margin-right: 30px; }
-        #wrapper .funding_method_section .function_methods_container .funding_method_header .climb_credit_logo {
+        #wrapper .funding_method_section .funding_methods_container .funding_method_header .climb_credit_logo {
           background: url("/assets/images/climb_credit_logo.png") no-repeat center/cover;
           width: 93px;
           height: 22px;
           margin-right: 38px; }
-        #wrapper .funding_method_section .function_methods_container .funding_method_header .funding_method_title h3 {
+        #wrapper .funding_method_section .funding_methods_container .funding_method_header .funding_method_title h3 {
           font: 20px/22px "Proxima Nova";
           font-weight: bold; }
-        #wrapper .funding_method_section .function_methods_container .funding_method_header .funding_method_title p {
+        #wrapper .funding_method_section .funding_methods_container .funding_method_header .funding_method_title p {
           font: 18px/22px "Proxima Nova";
           font-weight: 400; }
-        #wrapper .funding_method_section .function_methods_container .funding_method_header .expand_btn {
+        #wrapper .funding_method_section .funding_methods_container .funding_method_header .expand_btn {
           margin-left: auto;
           border: none;
           background-color: transparent; }
-          #wrapper .funding_method_section .function_methods_container .funding_method_header .expand_btn:focus {
+          #wrapper .funding_method_section .funding_methods_container .funding_method_header .expand_btn:focus {
             outline: none; }
-          #wrapper .funding_method_section .function_methods_container .funding_method_header .expand_btn .arrow_logo {
+          #wrapper .funding_method_section .funding_methods_container .funding_method_header .expand_btn .arrow_logo {
             background: url("/assets/images/arrow_down.svg") no-repeat center/cover;
             width: 20px;
             height: 11.7px;
             display: inline-block; }
+      #wrapper .funding_method_section .funding_methods_container .funding_method_content {
+        padding: 0 100px 0 50px;
+        font: 16px/22px "Proxima Nova";
+        font-weight: 400; }
+        #wrapper .funding_method_section .funding_methods_container .funding_method_content .sub_funding_method_content {
+          font: 14px/22px "Proxima Nova";
+          font-weight: 400; }
   #wrapper .gauge_your_potential_savings_section {
     height: 463px;
     background-color: #505170;
-    padding: 70px 140px; }
+    padding: 70px 140px;
+    position: relative; }
     #wrapper .gauge_your_potential_savings_section h2 {
       color: #fff;
       font: 40px/44px "Proxima Nova";
       font-weight: bold; }
+    #wrapper .gauge_your_potential_savings_section .savings_gauge {
+      align-items: flex-start;
+      color: #fff;
+      display: flex;
+      justify-content: start;
+      position: relative; }
+      #wrapper .gauge_your_potential_savings_section .savings_gauge .gauge_container {
+        margin-right: 5px;
+        text-align: center;
+        width: 130px; }
+      #wrapper .gauge_your_potential_savings_section .savings_gauge button {
+        background-color: #3A6C92;
+        border: none;
+        color: #fff;
+        height: 41px;
+        margin-top: 15px;
+        position: relative;
+        width: 100%; }
+        #wrapper .gauge_your_potential_savings_section .savings_gauge button:focus {
+          outline: none; }
+      #wrapper .gauge_your_potential_savings_section .savings_gauge .gauge_indicator {
+        background: #D9D9D9;
+        border: none;
+        display: inline-block;
+        height: 50px;
+        position: absolute;
+        top: 35px;
+        left: 130px;
+        width: 5px; }
+        #wrapper .gauge_your_potential_savings_section .savings_gauge .gauge_indicator::after {
+          background-color: #D9D9D9;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          content: '';
+          top: 48px;
+          left: -4.55px;
+          position: absolute; }
+      #wrapper .gauge_your_potential_savings_section .savings_gauge .early_reg_btn {
+        position: relative;
+        background-color: #05aae1; }
+        #wrapper .gauge_your_potential_savings_section .savings_gauge .early_reg_btn::before {
+          background: #05aae1;
+          border-radius: 50%;
+          border: none;
+          content: '';
+          display: inline-block;
+          height: 50px;
+          left: -10px;
+          position: absolute;
+          top: -5px;
+          width: 50px; }
+      #wrapper .gauge_your_potential_savings_section .savings_gauge .active {
+        background-color: #05aae1; }
+      #wrapper .gauge_your_potential_savings_section .savings_gauge .pay_in_full_btn {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px; }
+      #wrapper .gauge_your_potential_savings_section .savings_gauge p {
+        font: 12px/16px "Proxima Nova";
+        font-weight: 300;
+        margin-top: 20px;
+        text-align: left;
+        width: 80%; }
+      #wrapper .gauge_your_potential_savings_section .savings_gauge .savings {
+        margin: 15px 30px; }
+        #wrapper .gauge_your_potential_savings_section .savings_gauge .savings p {
+          font: 18px/22px "Proxima Nova";
+          font-weight: 300; }
+        #wrapper .gauge_your_potential_savings_section .savings_gauge .savings .savings_value {
+          font: 26px/30px "Proxima Nova";
+          font-weight: bold;
+          display: block;
+          text-align: center; }
+    #wrapper .gauge_your_potential_savings_section .gauge_savings_note {
+      color: #fff;
+      font: 10px/14px "Proxima Nova";
+      font-weight: 300;
+      width: 538px; }
+    #wrapper .gauge_your_potential_savings_section .cat_logo {
+      background: url("/assets/images/border_cat.png") no-repeat center/cover;
+      width: 31px;
+      height: 20px;
+      position: absolute;
+      bottom: -7px;
+      left: 800px; }
   #wrapper .fund_your_bootcamp_section {
     height: 470px;
     background-color: #fff;
@@ -259,7 +357,7 @@ a {
         width: 152px;
         height: 152px; }
       #wrapper .thinking_about_funding_section .steps_to_coding_bootcamp .start_coding_bootcamp_logo {
-        background: url("/assets/images/start_coding_bootcamp,png") no-repeat center/cover;
+        background: url("/assets/images/start_coding_bootcamp.png") no-repeat center/cover;
         width: 152px;
         height: 152px;
         margin-top: 20px; }

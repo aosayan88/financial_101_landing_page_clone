@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/stylesheet/financing_landing_page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="assets/javascript/landing_page.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -50,49 +52,94 @@
         </header>
         <section class="funding_method_section">
             <h2>The 4 Most Popular Funding Methods</h2>
-            <div class="function_methods_container">
+            <div class="funding_methods_container">
                 <div class="funding_method_header">
                     <span class="pay_in_full_logo"></span>
                     <div class="funding_method_title">
                         <h3>Pay in Full</h3>
                         <p>Receive a discount by paying up-front</p>
                     </div>
-                    <button type="button" class="expand_btn"><span class="arrow_logo"></span></button>
+                    <button type="button" class="expand_btn" data-toggle="collapse" data-target="#pay_in_full" aria-expanded="true"><span class="arrow_logo"></span></button>
+                </div>
+                <div id="pay_in_full" class="collapse show funding_method_content" data-parent=".funding_method_section">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas. Neque vitae tempus quam pellentesque nec nam. Id diam maecenas ultricies mi. Imperdiet dui accumsan sit amet.</p>
+                    <p class="sub_funding_method_content">Dignissim sodales ut eu sem integer vitae justo eget magna. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo.</p>
                 </div>
             </div>
-            <div class="function_methods_container">
+            <div class="funding_methods_container">
                 <div class="funding_method_header">
                     <span class="installment_plans_logo"></span>
                     <div class="funding_method_title">
                         <h3>Installment Plans</h3>
                         <p>If you don't want to pay all at once</p>
                     </div>
-                    <button type="button" class="expand_btn"><span class="arrow_logo"></span></button>
+                    <button type="button" class="expand_btn" data-toggle="collapse" data-target="#installment_plans" aria-expanded="true"><span class="arrow_logo"></span></button>
+                </div>
+                <div id="installment_plans" class="collapse funding_method_content" data-parent=".funding_method_section">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas. Neque vitae tempus quam pellentesque nec nam. Id diam maecenas ultricies mi. Imperdiet dui accumsan sit amet.</p>
+                    <p class="sub_funding_method_content">Dignissim sodales ut eu sem integer vitae justo eget magna. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo.</p>
                 </div>
             </div>
-            <div class="function_methods_container">
+            <div class="funding_methods_container">
                 <div class="funding_method_header">
                     <span class="ascent_logo"></span>
                     <div class="funding_method_title">
                         <h3>Ascent Financing</h3>
                         <p>For financing your program</p>
                     </div>
-                    <button type="button" class="expand_btn"><span class="arrow_logo"></span></button>
+                    <button type="button" class="expand_btn" data-toggle="collapse" data-target="#ascent_financing" aria-expanded="true"><span class="arrow_logo"></span></button>
+                </div>
+                <div id="ascent_financing" class="collapse funding_method_content" data-parent=".funding_method_section">
+                    <p>Apply for a loan that covers 100% of tuition costs with our third-party partner, Ascent. Ascent offers students flexible loan options including Deferred Repayment options (payments begin 3 months post-graduation). A soft credit check is required and seeing if you qualify only takes 3-5 minutes.</p>
+                    <p class="sub_funding_method_content">A hard credit check IS required to finalize the loan documents after approval. Utilizing a cosigner is an option with Ascent. Additional terms may apply; see application for more details.</p>
                 </div>
             </div>
-            <div class="function_methods_container">
+            <div class="funding_methods_container">
                 <div class="funding_method_header">
                     <span class="climb_credit_logo"></span>
                     <div class="funding_method_title">
                         <h3>Climb Credit</h3>
                         <p>For financing your program</p>
                     </div>
-                    <button type="button" class="expand_btn"><span class="arrow_logo"></span></button>
+                    <button type="button" class="expand_btn" data-toggle="collapse" data-target="#climb_credit" aria-expanded="true"><span class="arrow_logo"></span></button>
+                </div>
+                <div id="climb_credit" class="collapse funding_method_content" data-parent=".funding_method_section">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac turpis egestas. Neque vitae tempus quam pellentesque nec nam. Id diam maecenas ultricies mi. Imperdiet dui accumsan sit amet.</p>
+                    <p class="sub_funding_method_content">Dignissim sodales ut eu sem integer vitae justo eget magna. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo.</p>
                 </div>
             </div>
         </section>
         <section class="gauge_your_potential_savings_section">
             <h2>Gauge Your Potential Savings</h2>
+            <div class="savings_gauge">
+                <div class="gauge_container early_registration">
+                    <span>Early Registration</span>
+                    <button type="button" class="gauge_btn early_reg_btn" data-value="250">$250</button>
+                    <p>Pay your deposit within 5 days of your acceptance to Coding Dojo and receive $250 off* your program.</p>
+                </div>
+                <div class="gauge_container open_house">
+                    <span>Open House</span>
+                    <button type="button" class="gauge_btn open_house_btn" data-value="100">$100</button>
+                    <p>Attend your program’s Open House and unlock $100 off with a unique promotional voucher.</p>
+                </div>
+                <div class="gauge_container scholarship">
+                    <span>Scholarship</span>
+                    <button type="button" class="gauge_btn scholarship_btn" data-value="1500">$1-1500</button>
+                    <p>All Coding Dojo applicants can apply for one partial-scholarship ranging from $1,000 -$1,500, dependent on the program and scholarship awarded.</p>
+                </div>
+                <div class="gauge_container pay_in_full">
+                    <span>Pay In Full</span>
+                    <button type="button" class="gauge_btn pay_in_full_btn" data-value="1500">$1500</button>
+                    <p>Pay in full upon enrollment and save $1500 off your tuition!</p>
+                </div>
+                <div class="savings">
+                    <span>You've Saved</span>
+                    <span class="savings_value">$250</span>
+                </div>
+                <span class="gauge_indicator"></span>
+            </div>
+            <p class="gauge_savings_note">*Early Registration Discount is only applicable if no other deposit adjustments are applied to the program and the deposit is not covered by a third-party.</p>
+            <span class="cat_logo"></span>
         </section>
         <section class="fund_your_bootcamp_section">
             <h2>How to Fund Your Bootcamp</h2>
