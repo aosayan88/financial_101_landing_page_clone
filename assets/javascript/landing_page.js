@@ -3,23 +3,9 @@ var gauge_gap = 135;
 
 $(document).ready(function () {
     $("body")
-        .on("click", ".expand_btn", flipButtonIcon)
         .on("click", ".gauge_btn", gaugeProgress)
     $('.collapse').collapse();
 });
-
-function flipButtonIcon(){
-    let expand_btn = $(this);
-
-    if(collapse) {
-        expand_btn.find(".arrow_logo").css("transform", "rotate(180deg)");
-    }
-    else {
-        expand_btn.find(".arrow_logo").css("transform", "rotate(0)");
-    }
-
-    collapse = !collapse;
-}
 
 function gaugeProgress(){
     let gauge_btn = $(this);

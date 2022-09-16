@@ -34,18 +34,20 @@
     //border: 1px solid red;
 }
 
-li {
+ul {
     list-style-type: none;
+    list-style-position: inside;
     list-style: none;
+    padding: 0 !important;
 }
 
-a {
+a:link {
     text-decoration: none;
+    color: #fff;
 }
 
 #wrapper {
     margin: 0 auto;
-    max-width: 1440px;
 
     .fixed_side_card {
         background-color: #fff;
@@ -190,7 +192,6 @@ a {
         .header_banner {
             background: url(/assets/images/financing_101_banner.png) no-repeat center / cover;
             background-color: #1d1f21;
-            height: 485px;
             padding: 140px;
 
             h1 {
@@ -211,386 +212,574 @@ a {
         }
     }
 
-    .funding_method_section {
-        height: 1085px;
+    #funding_method_section {
         background-color: #f8faff;
-        padding: 90px 140px;
 
-        h2 {
-            color: #333333;
-            font: 40px/44px "Proxima Nova";
-            font-weight: 700;
-            width: 600px;
-            margin-bottom: 40px;
-        }
+        .funding_method_container {
+            max-width: 1440px;
+            padding: 90px 140px;
+            margin: auto;
 
-        .funding_methods_container {
-            width: 677px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin-bottom: 18px;
-            display: flex;
-            flex-direction: column;
-
-            .funding_method_header {
+            h2 {
+                color: #333333;
+                font: 40px/44px "Proxima Nova";
+                font-weight: 700;
+                width: 600px;
+                margin-bottom: 40px;
+            }
+    
+            .funding_methods_content {
+                width: 677px;
+                background-color: #fff;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                margin-bottom: 18px;
                 display: flex;
-                align-items: center;
-                padding: 0 47px 0 50px;
-                width: 100%;
-                height: 130px;
-
-                .pay_in_full_logo {
-                    background: url('/assets/images/PayInFull.png') no-repeat center / cover;
-                    width: 88.5px;
-                    height: 88.5px;
-                    margin-right: 45px;
-                }
-
-                .installment_plans_logo {
-                    background: url('/assets/images/installment_plans.png') no-repeat center / cover;
-                    width: 88.5px;
-                    height: 88.5px;
-                    margin-right: 45px;
-                }
-
-                .ascent_logo {
-                    background: url('/assets/images/ascent_financing_logo.png') no-repeat center / cover;
-                    width: 103px;
-                    height: 54px;
-                    margin-right: 30px;
-                }
-
-                .climb_credit_logo {
-                    background: url('/assets/images/climb_credit_logo.png') no-repeat center / cover;
-                    width: 93px;
-                    height: 22px;
-                    margin-right: 38px;
-                }
-
-                .funding_method_title {
-                    h3 {
-                        font: 20px/22px "Proxima Nova";
-                        font-weight: bold;
+                flex-direction: column;
+    
+                .funding_method_header {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 47px 0 50px;
+                    width: 100%;
+                    height: 130px;
+    
+                    .pay_in_full_logo {
+                        background: url('/assets/images/PayInFull.png') no-repeat center / cover;
+                        width: 88.5px;
+                        height: 88.5px;
+                        margin-right: 45px;
                     }
+    
+                    .installment_plans_logo {
+                        background: url('/assets/images/installment_plans.png') no-repeat center / cover;
+                        width: 88.5px;
+                        height: 88.5px;
+                        margin-right: 45px;
+                    }
+    
+                    .ascent_logo {
+                        background: url('/assets/images/ascent_financing_logo.png') no-repeat center / cover;
+                        width: 103px;
+                        height: 54px;
+                        margin-right: 30px;
+                    }
+    
+                    .climb_credit_logo {
+                        background: url('/assets/images/climb_credit_logo.png') no-repeat center / cover;
+                        width: 93px;
+                        height: 22px;
+                        margin-right: 38px;
+                    }
+    
+                    .funding_method_title {
+                        h3 {
+                            font: 20px/22px "Proxima Nova";
+                            font-weight: bold;
+                        }
+    
+                        p {
+                            font: 18px/22px "Proxima Nova";
+                            font-weight: 400;
+                        }
+                    }
+    
+                    .expand_btn {
+                        margin-left: auto;
+                        border: none;
+                        background-color: transparent;
+    
+                        &:focus {
+                            outline: none;
+                        }
+    
+                        &::after {
+                            background: url('/assets/images/arrow_down.svg') no-repeat center / cover;
+                            content: '';
+                            display: inline-block;
+                            height: 11.7px;
+                            transform: rotate(0deg);
+                            width: 20px;
+                        }
 
-                    p {
-                        font: 18px/22px "Proxima Nova";
+                        &:not(.collapsed)::after {
+                            background: url('/assets/images/arrow_down.svg') no-repeat center / cover;
+                            content: '';
+                            display: inline-block;
+                            height: 11.7px;
+                            transform: rotate(180deg);
+                            width: 20px;
+                        }
+                    }
+                }
+    
+                .funding_method_content {
+                    padding: 0 100px 0 50px;
+                    font: 16px/22px "Proxima Nova";
+                    font-weight: 400;
+    
+                    .sub_funding_method_content {
+                        font: 14px/22px "Proxima Nova";
                         font-weight: 400;
                     }
                 }
+            }
+        }
+    }
 
-                .expand_btn {
-                    margin-left: auto;
+    #gauge_your_potential_savings_section {
+        background-color: #505170;
+
+        .gauge_your_potential_savings_container {
+            max-width: 1440px;
+            margin: auto;
+            padding: 70px 140px;
+            position: relative;
+
+            h2 {
+                color: #fff;
+                font: 40px/44px "Proxima Nova";
+                font-weight: bold;
+            }
+    
+            .savings_gauge {
+                align-items: flex-start;
+                color: #fff;
+                display: flex;
+                justify-content: start;
+                position: relative;
+    
+                .gauge_container {
+                    margin-right: 5px;
+                    text-align: center;
+                    width: 130px;
+                }
+    
+                button {
+                    background-color: #3A6C92;
                     border: none;
-                    background-color: transparent;
+                    color: #fff;
+                    height: 41px;
+                    margin-top: 15px;
+                    position: relative;
+                    width: 100%;
+    
+                    &:focus {
+                        outline: none;
+                    }
+                }
+    
+                .gauge_indicator {
+                    background: #D9D9D9;
+                    border: none;
+                    display: inline-block;
+                    height: 50px;
+                    position: absolute;
+                    top: 35px;
+                    left: 130px;
+                    width: 5px;
+    
+                    &::after {
+                        background-color: #D9D9D9;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        content: '';
+                        top: 48px;
+                        left: -4.55px;
+                        position: absolute;
+                    }
+                }
+    
+                .early_reg_btn {
+                    position: relative;
+                    background-color: #05aae1;
+    
+                    &::before {
+                        background: #05aae1;
+                        border-radius: 50%;
+                        border: none;
+                        content: '';
+                        display: inline-block;
+                        height: 50px;
+                        left: -10px;
+                        position: absolute;
+                        top: -5px;
+                        width: 50px;
+                    }
+                }
+    
+                .active {
+                    background-color: #05aae1;
+                }
+    
+                .pay_in_full_btn {
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+    
+                p {
+                    font: 12px/16px "Proxima Nova";
+                    font-weight: 300;
+                    margin-top: 20px;
+                    text-align: left;
+                    width: 80%;
+                }
+    
+                .savings {
+                    margin: 15px 30px;
+    
+                    p {
+                        font: 18px/22px "Proxima Nova";
+                        font-weight: 300;
+                    }
+    
+                    .savings_value {
+                        font: 26px/30px "Proxima Nova";
+                        font-weight: bold;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+    
+                
+            }
+    
+            .gauge_savings_note {
+                color: #fff;
+                font: 10px/14px "Proxima Nova";
+                font-weight: 300;
+                width: 538px;
+            }
+    
+            .cat_logo {
+                background: url('/assets/images/border_cat.png') no-repeat center / cover;
+                width: 31px;
+                height: 20px;
+                position: absolute;
+                bottom: -7px;
+                left: 800px;
+            }
+        }
+    }
 
+    #fund_your_bootcamp_section {
+        background-color: #fff;
+
+        .fund_your_bootcamp_container {
+            padding: 78px 140px;
+            margin: auto;
+            max-width: 1440px;
+
+            h2 {
+                color: #333333;
+                font: 40px/44px "Proxima Nova";
+                font-weight: bold;
+            }
+    
+            p {
+                align-items: left;
+                font: 18px/27px "Proxima Nova";
+                font-weight: 400;
+                letter-spacing: 0.6px;
+                margin-top: 62px;
+                width: 271px;
+            }
+        }
+    }
+
+    #thinking_about_funding_section {
+        background-color: #505170;
+
+        .thinking_about_funding_container {
+            margin: auto;
+            max-width: 1440px;
+            padding: 77px 140px;
+
+            h2 {
+                color: #fff;
+                font: 40px/48px "Proxima Nova";
+                font-weight: bold;
+                width: 559px;
+            }
+    
+            p {
+                color: #fff;
+                font: 18px/27px "Proxima Nova";
+                font-weight: 400;
+                width: 612px;
+                margin: 30px 0;
+            }
+    
+            .steps_to_coding_bootcamp {
+                align-items: center;
+                display: flex;
+                width: 652px;
+                justify-content: space-between;
+    
+                .speak_to_admission_logo {
+                    background: url('/assets/images/speak_to_admissions.png') no-repeat center / cover;
+                    width: 191px;
+                    height: 152px;
+                }
+    
+                .apply_to_program_logo {
+                    background: url('/assets/images/apply_to_your_program_get_accepted.png') no-repeat center / cover;
+                    width: 173px;
+                    height: 175px;
+                }
+    
+                .secure_funding_logo {
+                    background: url('/assets/images/secure_your_funding_methods.png') no-repeat center / cover;
+                    width: 152px;
+                    height: 152px;
+                }
+    
+                .start_coding_bootcamp_logo {
+                    background: url('/assets/images/start_coding_bootcamp.png') no-repeat center / cover;
+                    width: 152px;
+                    height: 152px;
+                    margin-top: 20px;
+                }
+    
+                div {
+    
+                    h3 {
+                        font: 20px/0 "Proxima Nova";
+                        font-weight: bold;
+                        color: #fff;
+                        margin-top: 20px;
+                    }
+    
+                    p {
+                        color: #fff;
+                        font-weight: 400;
+                        font: 18px/27px "Proxima Nova";
+                        text-align: left;
+                        width: 407px;
+                    }
+                }
+            }
+        }  
+    }
+
+    #top_tech_names_section {
+        background-color: #f8faff;
+
+        .top_tech_names_container {
+            margin: auto;
+            max-width: 1440px;
+            padding: 70px 140px;
+
+            h2 {
+                color: #333333;
+                font: 40px/48px "Proxima Nova";
+                font-weight: bold;
+            }
+    
+            .tech_logos {
+                background: url('/assets/images/tech_logos.png') no-repeat center / cover;
+                width: 678px;
+                height: 117px;
+                margin-top: 63px;
+            }
+        }
+    }
+
+    #testimonial_section {
+        background-color: #fff;
+
+        .testimonial_container {
+            max-width: 1440px;
+            padding: 78px 162px;
+            margin: auto;
+            
+            .testimony {
+                background: url('/assets/images/quotation_mark.png') no-repeat center;
+                width: 676px;
+
+                h2 {
+                    font: 31px/34px "Proxima Nova";
+                    font-weight: bold;
+                    color: #333333;
+                    letter-spacing: 0.6px;
+                }
+        
+                .profile_container {
+                    display: flex;
+                    margin-top: 21px;
+        
+                    .profile_photo {
+                        width: 49px;
+                        height: 56px;
+                        background-color: #C4C4C4;
+                        border-radius: 5px;
+                        margin-right: 20px;
+                    }
+        
+                    .profile {
+                        display: flex;
+                        flex-direction: column;
+        
+                        .profile_name {
+                            font: 19px/23px "Proxima Nova";
+                            font-weight: bold;
+                            color: #333333;
+                        }
+        
+                        .profile_position {
+                            font: 16px/20px "Proxima Nova";
+                            font-weight: bold;
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #faqs_section {
+        background-color: #f8faff;
+
+        .faqs_container {
+            max-width: 1440px;
+            padding: 70px 130px;
+            margin: auto;
+
+            h2 {
+                font: 32px/36px "Proxima Nova";
+                font-weight: bold;
+                margin-bottom: 35px;
+            }
+
+            .faqs_question_header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .collapsed_btn {
+                    margin-left: auto;
+                        border: none;
+                        background-color: transparent;
+    
                     &:focus {
                         outline: none;
                     }
 
-                    .arrow_logo {
+                    &::after {
                         background: url('/assets/images/arrow_down.svg') no-repeat center / cover;
+                        content: '';
                         width: 20px;
                         height: 11.7px;
                         display: inline-block;
+                        transform: rotate(0deg);
+                    }
+
+                    &:not(.collapsed)::after {
+                        background: url('/assets/images/arrow_down.svg') no-repeat center / cover;
+                        content: '';
+                        width: 20px;
+                        height: 11.7px;
+                        display: inline-block;
+                        transform: rotate(180deg);
                     }
                 }
             }
 
-            .funding_method_content {
-                padding: 0 100px 0 50px;
-                font: 16px/22px "Proxima Nova";
-                font-weight: 400;
-
-                .sub_funding_method_content {
-                    font: 14px/22px "Proxima Nova";
-                    font-weight: 400;
-                }
+            .faqs_question_content {
+                width: 677px;
+                background-color: #fff;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 35px 60px;
+                margin-bottom: 15px;
             }
         }
     }
 
-    .gauge_your_potential_savings_section {
-        height: 463px;
-        background-color: #505170;
-        padding: 70px 140px;
-        position: relative;
+    footer {
+        background-color: #333333;
 
-        h2 {
+        .footer_container {
+            max-width: 1440px;
+            padding: 60px 120px;
+            margin: auto;
             color: #fff;
-            font: 40px/44px "Proxima Nova";
-            font-weight: bold;
-        }
 
-        .savings_gauge {
-            align-items: flex-start;
-            color: #fff;
-            display: flex;
-            justify-content: start;
-            position: relative;
-
-            .gauge_container {
-                margin-right: 5px;
-                text-align: center;
-                width: 130px;
-            }
-
-            button {
-                background-color: #3A6C92;
-                border: none;
-                color: #fff;
-                height: 41px;
-                margin-top: 15px;
-                position: relative;
-                width: 100%;
-
-                &:focus {
-                    outline: none;
-                }
-            }
-
-            .gauge_indicator {
-                background: #D9D9D9;
-                border: none;
-                display: inline-block;
-                height: 50px;
-                position: absolute;
-                top: 35px;
-                left: 130px;
-                width: 5px;
-
-                &::after {
-                    background-color: #D9D9D9;
-                    width: 14px;
-                    height: 14px;
-                    border-radius: 50%;
-                    content: '';
-                    top: 48px;
-                    left: -4.55px;
-                    position: absolute;
-                }
-            }
-
-            .early_reg_btn {
-                position: relative;
-                background-color: #05aae1;
-
-                &::before {
-                    background: #05aae1;
-                    border-radius: 50%;
-                    border: none;
-                    content: '';
-                    display: inline-block;
-                    height: 50px;
-                    left: -10px;
-                    position: absolute;
-                    top: -5px;
-                    width: 50px;
-                }
-            }
-
-            .active {
-                background-color: #05aae1;
-            }
-
-            .pay_in_full_btn {
-                border-top-right-radius: 20px;
-                border-bottom-right-radius: 20px;
-            }
-
-            p {
-                font: 12px/16px "Proxima Nova";
-                font-weight: 300;
-                margin-top: 20px;
-                text-align: left;
-                width: 80%;
-            }
-
-            .savings {
-                margin: 15px 30px;
-
-                p {
-                    font: 18px/22px "Proxima Nova";
-                    font-weight: 300;
-                }
-
-                .savings_value {
-                    font: 26px/30px "Proxima Nova";
-                    font-weight: bold;
-                    display: block;
-                    text-align: center;
-                }
-            }
-
-            
-        }
-
-        .gauge_savings_note {
-            color: #fff;
-            font: 10px/14px "Proxima Nova";
-            font-weight: 300;
-            width: 538px;
-        }
-
-        .cat_logo {
-            background: url('/assets/images/border_cat.png') no-repeat center / cover;
-            width: 31px;
-            height: 20px;
-            position: absolute;
-            bottom: -7px;
-            left: 800px;
-        }
-    }
-
-    .fund_your_bootcamp_section {
-        height: 470px;
-        background-color: #fff;
-        padding: 78px 140px;
-
-        h2 {
-            color: #333333;
-            font: 40px/44px "Proxima Nova";
-            font-weight: bold;
-        }
-
-        p {
-            align-items: left;
-            font: 18px/27px "Proxima Nova";
-            font-weight: 400;
-            letter-spacing: 0.6px;
-            margin-top: 62px;
-            width: 271px;
-        }
-    }
-
-    .thinking_about_funding_section {
-        height: 1231px;
-        background-color: #505170;
-        padding: 77px 140px;
-
-        h2 {
-            color: #fff;
-            font: 40px/48px "Proxima Nova";
-            font-weight: bold;
-            width: 559px;
-        }
-
-        p {
-            color: #fff;
-            font: 18px/27px "Proxima Nova";
-            font-weight: 400;
-            width: 612px;
-            margin: 30px 0;
-        }
-
-        .steps_to_coding_bootcamp {
-            display: flex;
-            width: 652px;
-            justify-content: space-between;
-
-            .speak_to_admission_logo {
-                background: url('/assets/images/speak_to_admissions.png') no-repeat center / cover;
-                width: 191px;
-                height: 152px;
-            }
-
-            .apply_to_program_logo {
-                background: url('/assets/images/apply_to_your_program_get_accepted.png') no-repeat center / cover;
-                width: 173px;
-                height: 175px;
-            }
-
-            .secure_funding_logo {
-                background: url('/assets/images/secure_your_funding_methods.png') no-repeat center / cover;
-                width: 152px;
-                height: 152px;
-            }
-
-            .start_coding_bootcamp_logo {
-                background: url('/assets/images/start_coding_bootcamp.png') no-repeat center / cover;
-                width: 152px;
-                height: 152px;
-                margin-top: 20px;
-            }
-
-            div {
-
-                h3 {
-                    font: 20px/0 "Proxima Nova";
-                    font-weight: bold;
-                    color: #fff;
-                    margin-top: 20px;
-                }
-
-                p {
-                    color: #fff;
-                    font-weight: 400;
-                    font: 18px/27px "Proxima Nova";
-                    text-align: left;
-                    width: 407px;
-                }
-            }
-        }
-    }
-
-    .top_tech_names_section {
-        height: 391px;
-        background-color: #f8faff;
-        padding: 70px 140px;
-
-        h2 {
-            color: #333333;
-            font: 40px/48px "Proxima Nova";
-            font-weight: bold;
-        }
-
-        .tech_logos {
-            background: url('/assets/images/tech_logos.png') no-repeat center / cover;
-            width: 678px;
-            height: 117px;
-            margin-top: 63px;
-        }
-    }
-
-    .testimonial_section {
-        background: url('/assets/images/quotation_mark.png') no-repeat center;
-        width: 883px;
-        height: 336px;
-        padding: 78px 0 0 162px;
-
-        h2 {
-            font: 31px/34px "Proxima Nova";
-            font-weight: bold;
-            color: #333333;
-            letter-spacing: 0.6px;
-        }
-
-        .profile_container {
-            display: flex;
-            margin-top: 21px;
-
-            .profile_photo {
-                width: 49px;
-                height: 56px;
-                background-color: #C4C4C4;
-                border-radius: 5px;
-                margin-right: 20px;
-            }
-
-            .profile {
+            .upper_footer {
                 display: flex;
-                flex-direction: column;
+                padding-bottom: 25px;
+                border-bottom: 1px solid #a5a3a3;
 
-                .profile_name {
-                    font: 19px/23px "Proxima Nova";
-                    font-weight: bold;
-                    color: #333333;
+                .upper_footer_item {
+                    margin-right: 50px;
+
+                    a {
+                        color: #fff;
+                    }
+                    
                 }
 
-                .profile_position {
-                    font: 16px/20px "Proxima Nova";
-                    font-weight: bold;
-                    color: #333333;
+                .upper_footer_form {
+                    margin-left: auto;
+                    width: 406px;
+
+                    h4 {
+                        font: 16px/28px "Proxima Nova";
+                        font-weight: 300;
+                    }
+
+                    form {
+                        display: flex;
+                        margin-bottom: 20px;
+
+                        .email_input {
+                            height: 50px;
+                            background-color: #fff;
+                            width: 406px;
+                            border: none;
+                            border-radius: 10px;
+                            padding: 15px 20px;
+                        }
+
+                        .submit_btn {
+                            width: 109px;
+                            height: 50px;
+                            border: 1px solid #fff;
+                            border-radius: 10px;
+                            color: #fff;
+                            font: 14px/18px "Proxima Nova";
+                            font-weight: bold;
+                            letter-spacing: 0.6px;
+                            background-color: transparent;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    p {
+                        font: 10px/17px "Proxima Nova";
+                        font-weight: 300;
+
+                        a {
+                            color: #05aae1;
+                        }
+                    }
+                }
+            }
+
+            .lower_footer {
+                height: 50px;
+                margin-top: 30px;
+
+                p {
+                    font: 16px/26px "Proxima Nova";
+                    font-weight: 300;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+
+                a {
+                    color: #05aae1;
                 }
             }
         }
