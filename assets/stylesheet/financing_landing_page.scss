@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/assets/fonts/Proxima\ Nova\ Extrabold.otf');
+    src: url("/assets/fonts/Proxima\ Nova\ Extrabold.otf");
     font-weight: 800;
     font-style: normal;
 }
@@ -77,7 +77,7 @@ a:link {
                     font-weight: 400;
 
                     &:before {
-                        background: url(/assets/images/phone_icon.svg) no-repeat center;
+                        background: url("/assets/images/phone_icon.svg") no-repeat center;
                         content: '';
                         display: inline-block;
                         height: 16px;
@@ -107,7 +107,7 @@ a:link {
             padding: 0 40px 0 30px;
 
             .coding_dojo_logo {
-                background: url(/assets/images/coding_dojo_logo.png) no-repeat center;
+                background: url("/assets/images/coding_dojo_logo.png") no-repeat center;
                 display: inline-block;
                 height: 30px;
                 width: 99px;
@@ -133,7 +133,7 @@ a:link {
                     margin-right: 45px;
 
                     &::after {
-                        background: url(/assets/images/caret_down.svg) no-repeat center;
+                        background: url("/assets/images/caret_down.svg") no-repeat center;
                         content: '';
                         display: inline-block;
                         height: 5px;
@@ -160,7 +160,7 @@ a:link {
         }
 
         .header_banner {
-            background: url(/assets/images/financing_101_banner.png) no-repeat center / cover;
+            background: url("/assets/images/financing_101_banner.png") no-repeat center / cover;
             background-color: #1d1f21;
             padding: 140px;
 
@@ -186,7 +186,7 @@ a:link {
         margin: auto;
         position: fixed;
         top: 200px;
-        right: 20%;
+        right: 13%;
 
         .sticky_side_card {
             background-color: #fff;
