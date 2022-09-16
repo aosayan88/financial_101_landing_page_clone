@@ -49,42 +49,6 @@ a:link {
 #wrapper {
     margin: 0 auto;
 
-    .fixed_side_card {
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-        height: 441px;
-        padding: 60px 70px;
-        position: fixed;
-        right: 25%;
-        top: 200px;
-        width: 406px;
-
-        h2 {
-            color: #333333;
-            font: 40px/45px "Proxima Nova";
-            font-weight: bold;
-        }
-
-        p {
-            font: 16px/22px "Proxima Nova";
-            font-weight: 400;
-            color: #333333;
-            margin: 20px 0 35px 0;
-        }
-
-        .chat_with_admission_btn {
-            width: 100%;
-            height: 65px;
-            color: #fff;
-            font: 16px/20px "Proxima Nova";
-            font-weight: bold;
-            border: none;
-            background-color: #05aae1;
-            border-radius: 3px;
-        }
-    }
-
     header {
         .sub_nav {
             align-items: center;
@@ -97,7 +61,9 @@ a:link {
 
             .cohort_text {
                 color: #fff;
-                margin-left: 550px;
+                display: block;
+                flex-grow: 1;
+                text-align: center;
             }
 
             .sub_nav_actions {
@@ -105,7 +71,7 @@ a:link {
                 display: flex;
                 margin-left: auto;
 
-                .phone_number {
+                .cohort_phone_number {
                     color: #05aae1;
                     font: 16px/20px "Proxima Nova";
                     font-weight: 400;
@@ -147,12 +113,16 @@ a:link {
                 width: 99px;
             }
 
+            .nav_spacer {
+                flex-grow: 1;
+            }
+
             .nav_links {
                 display: flex;
                 justify-content: center;
                 margin: 0 0 0 180px;
 
-                button {
+                a {
                     align-items: center;
                     background-color: transparent;
                     border: none;
@@ -208,6 +178,50 @@ a:link {
                 height: 54px;
                 font: 18px/24px "Proxima Nova";
                 font-weight: 400;
+            }
+        }
+    }
+
+    #sticky_card_container {
+        margin: auto;
+        position: fixed;
+        top: 200px;
+        right: 20%;
+
+        .sticky_side_card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            height: 441px;
+            padding: 60px 70px;
+            position: sticky;
+            left: 0;
+            top: 0;
+            width: 406px;
+            z-index: 2;
+    
+            h2 {
+                color: #333333;
+                font: 40px/45px "Proxima Nova";
+                font-weight: bold;
+            }
+    
+            p {
+                font: 16px/22px "Proxima Nova";
+                font-weight: 400;
+                color: #333333;
+                margin: 20px 0 35px 0;
+            }
+    
+            .chat_with_admission_btn {
+                width: 100%;
+                height: 65px;
+                color: #fff;
+                font: 16px/20px "Proxima Nova";
+                font-weight: bold;
+                border: none;
+                background-color: #05aae1;
+                border-radius: 3px;
             }
         }
     }
@@ -475,14 +489,47 @@ a:link {
                 font: 40px/44px "Proxima Nova";
                 font-weight: bold;
             }
-    
-            p {
-                align-items: left;
-                font: 18px/27px "Proxima Nova";
-                font-weight: 400;
-                letter-spacing: 0.6px;
-                margin-top: 62px;
-                width: 271px;
+
+            .fund_your_bootcamp_content {
+                display: flex;
+
+                p {
+                    align-items: left;
+                    font: 18px/27px "Proxima Nova";
+                    font-weight: 400;
+                    letter-spacing: 0.6px;
+                    margin-top: 62px;
+                    width: 271px;
+                }
+
+                table {
+                    margin-left: 50px;
+                    border: none;
+
+                    th {
+                        width: 150px;
+                        text-align: center;
+                    }
+
+                    td {
+                        font: 16px/16px "Proxima Nova";
+                        font-weight: 400;
+                        height: 62px;
+                        padding: 10px 20px;
+                        width: 150px;
+                    }
+
+                    .table_grayed_rows {
+                        background-color: #c4c4c4;
+                    }
+
+                    .knock_off_price {
+                        font: 12px/16px "Proxima Nova";
+                        font-weight: 400;
+                        text-align: center;
+                        max-width: 85px !important;
+                    }
+                }
             }
         }
     }
@@ -628,7 +675,7 @@ a:link {
         
                         .profile_position {
                             font: 16px/20px "Proxima Nova";
-                            font-weight: bold;
+                            font-weight: 400;
                             color: #333333;
                         }
                     }
