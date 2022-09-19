@@ -137,7 +137,7 @@ a:link {
   background-color: #05aae1;
 }
 #wrapper header .header_banner {
-  background: url("/images/financing_101_banner.png") no-repeat center / cover;
+  background: url("../images/financing_101_banner.png") no-repeat center / cover;
   background-color: #1d1f21;
   padding: 140px;
 }
