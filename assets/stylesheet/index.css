@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/ProximaNova-Regular.otf');
+  src: url('../fonts/ProximaNova-Regular.otf');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/Proxima\ Nova\ Alt\ Bold.otf');
+  src: url('../fonts/Proxima\ Nova\ Alt\ Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/fonts/Proxima\ Nova\ Extrabold.otf");
+  src: url("../fonts/Proxima\ Nova\ Extrabold.otf");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/Proxima\ Nova\ Thin.otf');
+  src: url('../fonts/Proxima\ Nova\ Thin.otf');
   font-weight: 200;
   font-style: normal;
 }
@@ -67,7 +67,7 @@ a:link {
   font-weight: 400;
 }
 #wrapper header .sub_nav .sub_nav_actions .cohort_phone_number:before {
-  background: url("/images/phone_icon.svg") no-repeat center;
+  background: url("../images/phone_icon.svg") no-repeat center;
   content: '';
   display: inline-block;
   height: 16px;
@@ -92,7 +92,7 @@ a:link {
   padding: 0 40px 0 30px;
 }
 #wrapper header nav .coding_dojo_logo {
-  background: url("/images/coding_dojo_logo.png") no-repeat center;
+  background: url("../images/coding_dojo_logo.png") no-repeat center;
   display: inline-block;
   height: 30px;
   width: 99px;
@@ -116,7 +116,7 @@ a:link {
   margin-right: 45px;
 }
 #wrapper header nav .nav_links a::after {
-  background: url("/images/caret_down.svg") no-repeat center;
+  background: url("../images/caret_down.svg") no-repeat center;
   content: '';
   display: inline-block;
   height: 5px;
