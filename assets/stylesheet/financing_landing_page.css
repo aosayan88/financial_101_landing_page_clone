@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/assets/fonts/ProximaNova-Regular.otf");
+  src: url("/fonts/ProximaNova-Regular.otf");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/assets/fonts/Proxima Nova Bold.otf");
+  src: url("/fonts/Proxima Nova Alt Bold.otf");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/assets/fonts/Proxima Nova Extrabold.otf");
+  src: url("/fonts/Proxima Nova Extrabold.otf");
   font-weight: 800;
   font-style: normal; }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/assets/fonts/Proxima Nova Thin.otf");
+  src: url("/fonts/Proxima Nova Thin.otf");
   font-weight: 200;
   font-style: normal; }
 * {
@@ -58,7 +58,7 @@ a:link {
         font: 16px/20px "Proxima Nova";
         font-weight: 400; }
         #wrapper header .sub_nav .sub_nav_actions .cohort_phone_number:before {
-          background: url("/assets/images/phone_icon.svg") no-repeat center;
+          background: url("/images/phone_icon.svg") no-repeat center;
           content: '';
           display: inline-block;
           height: 16px;
@@ -80,7 +80,7 @@ a:link {
     height: 56px;
     padding: 0 40px 0 30px; }
     #wrapper header nav .coding_dojo_logo {
-      background: url("/assets/images/coding_dojo_logo.png") no-repeat center;
+      background: url("/images/coding_dojo_logo.png") no-repeat center;
       display: inline-block;
       height: 30px;
       width: 99px; }
@@ -100,7 +100,7 @@ a:link {
         display: flex;
         margin-right: 45px; }
         #wrapper header nav .nav_links a::after {
-          background: url("/assets/images/caret_down.svg") no-repeat center;
+          background: url("/images/caret_down.svg") no-repeat center;
           content: '';
           display: inline-block;
           height: 5px;
@@ -118,7 +118,7 @@ a:link {
       border-radius: 2px;
       background-color: #05aae1; }
   #wrapper header .header_banner {
-    background: url("/assets/images/financing_101_banner.png") no-repeat center/cover;
+    background: url("/images/financing_101_banner.png") no-repeat center/cover;
     background-color: #1d1f21;
     padding: 140px; }
     #wrapper header .header_banner h1 {
@@ -193,22 +193,22 @@ a:link {
           width: 100%;
           height: 130px; }
           #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .pay_in_full_logo {
-            background: url("/assets/images/PayInFull.png") no-repeat center/cover;
+            background: url("/images/PayInFull.png") no-repeat center/cover;
             width: 88.5px;
             height: 88.5px;
             margin-right: 45px; }
           #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .installment_plans_logo {
-            background: url("/assets/images/installment_plans.png") no-repeat center/cover;
+            background: url("/images/installment_plans.png") no-repeat center/cover;
             width: 88.5px;
             height: 88.5px;
             margin-right: 45px; }
           #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .ascent_logo {
-            background: url("/assets/images/ascent_financing_logo.png") no-repeat center/cover;
+            background: url("/images/ascent_financing_logo.png") no-repeat center/cover;
             width: 103px;
             height: 54px;
             margin-right: 30px; }
           #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .climb_credit_logo {
-            background: url("/assets/images/climb_credit_logo.png") no-repeat center/cover;
+            background: url("/images/climb_credit_logo.png") no-repeat center/cover;
             width: 93px;
             height: 22px;
             margin-right: 38px; }
@@ -225,14 +225,14 @@ a:link {
             #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn:focus {
               outline: none; }
             #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn::after {
-              background: url("/assets/images/arrow_down.svg") no-repeat center/cover;
+              background: url("/images/arrow_down.svg") no-repeat center/cover;
               content: '';
               display: inline-block;
               height: 11.7px;
               transform: rotate(0deg);
               width: 20px; }
             #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn:not(.collapsed)::after {
-              background: url("/assets/images/arrow_down.svg") no-repeat center/cover;
+              background: url("/images/arrow_down.svg") no-repeat center/cover;
               content: '';
               display: inline-block;
               height: 11.7px;
@@ -335,7 +335,7 @@ a:link {
         font-weight: 300;
         width: 538px; }
       #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .cat_logo {
-        background: url("/assets/images/border_cat.png") no-repeat center/cover;
+        background: url("/images/border_cat.png") no-repeat center/cover;
         width: 31px;
         height: 20px;
         position: absolute;
@@ -402,19 +402,19 @@ a:link {
         width: 652px;
         justify-content: space-between; }
         #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .speak_to_admission_logo {
-          background: url("/assets/images/speak_to_admissions.png") no-repeat center/cover;
+          background: url("/images/speak_to_admissions.png") no-repeat center/cover;
           width: 191px;
           height: 152px; }
         #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .apply_to_program_logo {
-          background: url("/assets/images/apply_to_your_program_get_accepted.png") no-repeat center/cover;
+          background: url("/images/apply_to_your_program_get_accepted.png") no-repeat center/cover;
           width: 173px;
           height: 175px; }
         #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .secure_funding_logo {
-          background: url("/assets/images/secure_your_funding_methods.png") no-repeat center/cover;
+          background: url("/images/secure_your_funding_methods.png") no-repeat center/cover;
           width: 152px;
           height: 152px; }
         #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .start_coding_bootcamp_logo {
-          background: url("/assets/images/start_coding_bootcamp.png") no-repeat center/cover;
+          background: url("/images/start_coding_bootcamp.png") no-repeat center/cover;
           width: 152px;
           height: 152px;
           margin-top: 20px; }
@@ -440,7 +440,7 @@ a:link {
         font: 40px/48px "Proxima Nova";
         font-weight: bold; }
       #wrapper #top_tech_names_section .top_tech_names_container .tech_logos {
-        background: url("/assets/images/tech_logos.png") no-repeat center/cover;
+        background: url("/images/tech_logos.png") no-repeat center/cover;
         width: 678px;
         height: 117px;
         margin-top: 63px; }
@@ -451,7 +451,7 @@ a:link {
       padding: 78px 162px;
       margin: auto; }
       #wrapper #testimonial_section .testimonial_container .testimony {
-        background: url("/assets/images/quotation_mark.png") no-repeat center;
+        background: url("/images/quotation_mark.png") no-repeat center;
         width: 676px; }
         #wrapper #testimonial_section .testimonial_container .testimony h2 {
           font: 31px/34px "Proxima Nova";
@@ -499,14 +499,14 @@ a:link {
           #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn:focus {
             outline: none; }
           #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn::after {
-            background: url("/assets/images/arrow_down.svg") no-repeat center/cover;
+            background: url("/images/arrow_down.svg") no-repeat center/cover;
             content: '';
             width: 20px;
             height: 11.7px;
             display: inline-block;
             transform: rotate(0deg); }
           #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn:not(.collapsed)::after {
-            background: url("/assets/images/arrow_down.svg") no-repeat center/cover;
+            background: url("/images/arrow_down.svg") no-repeat center/cover;
             content: '';
             width: 20px;
             height: 11.7px;
