@@ -225,25 +225,25 @@ a:link {
   height: 130px;
 }
 #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .pay_in_full_logo {
-  background: url('/images/PayInFull.png') no-repeat center / cover;
+  background: url('../images/PayInFull.png') no-repeat center / cover;
   width: 88.5px;
   height: 88.5px;
   margin-right: 45px;
 }
 #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .installment_plans_logo {
-  background: url('/images/installment_plans.png') no-repeat center / cover;
+  background: url('../images/installment_plans.png') no-repeat center / cover;
   width: 88.5px;
   height: 88.5px;
   margin-right: 45px;
 }
 #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .ascent_logo {
-  background: url('/images/ascent_financing_logo.png') no-repeat center / cover;
+  background: url('../images/ascent_financing_logo.png') no-repeat center / cover;
   width: 103px;
   height: 54px;
   margin-right: 30px;
 }
 #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .climb_credit_logo {
-  background: url('/images/climb_credit_logo.png') no-repeat center / cover;
+  background: url('../images/climb_credit_logo.png') no-repeat center / cover;
   width: 93px;
   height: 22px;
   margin-right: 38px;
@@ -265,7 +265,7 @@ a:link {
   outline: none;
 }
 #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn::after {
-  background: url('/images/arrow_down.svg') no-repeat center / cover;
+  background: url('../images/arrow_down.svg') no-repeat center / cover;
   content: '';
   display: inline-block;
   height: 11.7px;
@@ -273,7 +273,7 @@ a:link {
   width: 20px;
 }
 #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn:not(.collapsed)::after {
-  background: url('/images/arrow_down.svg') no-repeat center / cover;
+  background: url('../images/arrow_down.svg') no-repeat center / cover;
   content: '';
   display: inline-block;
   height: 11.7px;
@@ -397,7 +397,7 @@ a:link {
   width: 538px;
 }
 #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .cat_logo {
-  background: url('/images/border_cat.png') no-repeat center / cover;
+  background: url('../images/border_cat.png') no-repeat center / cover;
   width: 31px;
   height: 20px;
   position: absolute;
@@ -480,22 +480,22 @@ a:link {
   justify-content: space-between;
 }
 #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .speak_to_admission_logo {
-  background: url('/images/speak_to_admissions.png') no-repeat center / cover;
+  background: url('../images/speak_to_admissions.png') no-repeat center / cover;
   width: 191px;
   height: 152px;
 }
 #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .apply_to_program_logo {
-  background: url('/images/apply_to_your_program_get_accepted.png') no-repeat center / cover;
+  background: url('../images/apply_to_your_program_get_accepted.png') no-repeat center / cover;
   width: 173px;
   height: 175px;
 }
 #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .secure_funding_logo {
-  background: url('/images/secure_your_funding_methods.png') no-repeat center / cover;
+  background: url('../images/secure_your_funding_methods.png') no-repeat center / cover;
   width: 152px;
   height: 152px;
 }
 #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .start_coding_bootcamp_logo {
-  background: url('/images/start_coding_bootcamp.png') no-repeat center / cover;
+  background: url('../images/start_coding_bootcamp.png') no-repeat center / cover;
   width: 152px;
   height: 152px;
   margin-top: 20px;
@@ -527,7 +527,7 @@ a:link {
   font-weight: bold;
 }
 #wrapper #top_tech_names_section .top_tech_names_container .tech_logos {
-  background: url('/images/tech_logos.png') no-repeat center / cover;
+  background: url('../images/tech_logos.png') no-repeat center / cover;
   width: 678px;
   height: 117px;
   margin-top: 63px;
@@ -541,7 +541,7 @@ a:link {
   margin: auto;
 }
 #wrapper #testimonial_section .testimonial_container .testimony {
-  background: url('/images/quotation_mark.png') no-repeat center;
+  background: url('../images/quotation_mark.png') no-repeat center;
   width: 676px;
 }
 #wrapper #testimonial_section .testimonial_container .testimony h2 {
@@ -602,7 +602,7 @@ a:link {
   outline: none;
 }
 #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn::after {
-  background: url('/images/arrow_down.svg') no-repeat center / cover;
+  background: url('../images/arrow_down.svg') no-repeat center / cover;
   content: '';
   width: 20px;
   height: 11.7px;
@@ -610,7 +610,7 @@ a:link {
   transform: rotate(0deg);
 }
 #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn:not(.collapsed)::after {
-  background: url('/images/arrow_down.svg') no-repeat center / cover;
+  background: url('../images/arrow_down.svg') no-repeat center / cover;
   content: '';
   width: 20px;
   height: 11.7px;
