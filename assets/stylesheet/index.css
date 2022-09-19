@@ -1,577 +1,699 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/fonts/ProximaNova-Regular.otf");
+  src: url('/fonts/ProximaNova-Regular.otf');
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/fonts/Proxima Nova Alt Bold.otf");
+  src: url('/fonts/Proxima\ Nova\ Alt\ Bold.otf');
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/fonts/Proxima Nova Extrabold.otf");
+  src: url("/fonts/Proxima\ Nova\ Extrabold.otf");
   font-weight: 800;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/fonts/Proxima Nova Thin.otf");
+  src: url('/fonts/Proxima\ Nova\ Thin.otf');
   font-weight: 200;
-  font-style: normal; }
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Proxima Nova'; }
-
+  font-family: 'Proxima Nova';
+}
 ul {
   list-style-type: none;
   list-style-position: inside;
   list-style: none;
-  padding: 0 !important; }
-
+  padding: 0 !important;
+}
 a:link {
   text-decoration: none;
-  color: #fff; }
-
+  color: #fff;
+}
 #wrapper {
-  margin: 0 auto; }
-  #wrapper header .sub_nav {
-    align-items: center;
-    background-color: #272634;
-    display: flex;
-    height: 42px;
-    justify-content: center;
-    padding: 0 40px;
-    width: 100%; }
-    #wrapper header .sub_nav .cohort_text {
-      color: #fff;
-      display: block;
-      flex-grow: 1;
-      text-align: center; }
-    #wrapper header .sub_nav .sub_nav_actions {
-      align-items: center;
-      display: flex;
-      margin-left: auto; }
-      #wrapper header .sub_nav .sub_nav_actions .cohort_phone_number {
-        color: #05aae1;
-        font: 16px/20px "Proxima Nova";
-        font-weight: 400; }
-        #wrapper header .sub_nav .sub_nav_actions .cohort_phone_number:before {
-          background: url("/images/phone_icon.svg") no-repeat center;
-          content: '';
-          display: inline-block;
-          height: 16px;
-          margin-right: 10px;
-          width: 16px; }
-      #wrapper header .sub_nav .sub_nav_actions .talk_to_us_btn {
-        background-color: transparent;
-        border: 1px solid #05aae1;
-        color: #fff;
-        font: 16px/20px "Proxima Nova";
-        font-weight: 400;
-        height: 36px;
-        margin-left: 66px;
-        width: 120px; }
-  #wrapper header nav {
-    align-items: center;
-    background-color: #1d1f21;
-    display: flex;
-    height: 56px;
-    padding: 0 40px 0 30px; }
-    #wrapper header nav .coding_dojo_logo {
-      background: url("/images/coding_dojo_logo.png") no-repeat center;
-      display: inline-block;
-      height: 30px;
-      width: 99px; }
-    #wrapper header nav .nav_spacer {
-      flex-grow: 1; }
-    #wrapper header nav .nav_links {
-      display: flex;
-      justify-content: center;
-      margin: 0 0 0 180px; }
-      #wrapper header nav .nav_links a {
-        align-items: center;
-        background-color: transparent;
-        border: none;
-        font: 16px/20px "Proxima Nova";
-        font-weight: bold;
-        color: #fff;
-        display: flex;
-        margin-right: 45px; }
-        #wrapper header nav .nav_links a::after {
-          background: url("/images/caret_down.svg") no-repeat center;
-          content: '';
-          display: inline-block;
-          height: 5px;
-          margin-left: 10px;
-          width: 11px; }
-    #wrapper header nav a {
-      color: #fff;
-      margin-right: 66px; }
-    #wrapper header nav .nav_apply_btn {
-      margin-left: auto;
-      width: 120px;
-      height: 36px;
-      color: #fff;
-      border: none;
-      border-radius: 2px;
-      background-color: #05aae1; }
-  #wrapper header .header_banner {
-    background: url("/images/financing_101_banner.png") no-repeat center/cover;
-    background-color: #1d1f21;
-    padding: 140px; }
-    #wrapper header .header_banner h1 {
-      width: 575px;
-      height: 147px;
-      color: #fff;
-      font: 64px/74px "Proxima Nova";
-      font-weight: 700; }
-    #wrapper header .header_banner p {
-      color: #fff;
-      width: 456px;
-      height: 54px;
-      font: 18px/24px "Proxima Nova";
-      font-weight: 400; }
-  #wrapper #sticky_card_container {
-    margin: auto;
-    position: fixed;
-    top: 200px;
-    right: 13%; }
-    #wrapper #sticky_card_container .sticky_side_card {
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-      height: 441px;
-      padding: 60px 70px;
-      position: sticky;
-      left: 0;
-      top: 0;
-      width: 406px;
-      z-index: 2; }
-      #wrapper #sticky_card_container .sticky_side_card h2 {
-        color: #333333;
-        font: 40px/45px "Proxima Nova";
-        font-weight: bold; }
-      #wrapper #sticky_card_container .sticky_side_card p {
-        font: 16px/22px "Proxima Nova";
-        font-weight: 400;
-        color: #333333;
-        margin: 20px 0 35px 0; }
-      #wrapper #sticky_card_container .sticky_side_card .chat_with_admission_btn {
-        width: 100%;
-        height: 65px;
-        color: #fff;
-        font: 16px/20px "Proxima Nova";
-        font-weight: bold;
-        border: none;
-        background-color: #05aae1;
-        border-radius: 3px; }
-  #wrapper #funding_method_section {
-    background-color: #f8faff; }
-    #wrapper #funding_method_section .funding_method_container {
-      max-width: 1440px;
-      padding: 90px 140px;
-      margin: auto; }
-      #wrapper #funding_method_section .funding_method_container h2 {
-        color: #333333;
-        font: 40px/44px "Proxima Nova";
-        font-weight: 700;
-        width: 600px;
-        margin-bottom: 40px; }
-      #wrapper #funding_method_section .funding_method_container .funding_methods_content {
-        width: 677px;
-        background-color: #fff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin-bottom: 18px;
-        display: flex;
-        flex-direction: column; }
-        #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header {
-          display: flex;
-          align-items: center;
-          padding: 0 47px 0 50px;
-          width: 100%;
-          height: 130px; }
-          #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .pay_in_full_logo {
-            background: url("/images/PayInFull.png") no-repeat center/cover;
-            width: 88.5px;
-            height: 88.5px;
-            margin-right: 45px; }
-          #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .installment_plans_logo {
-            background: url("/images/installment_plans.png") no-repeat center/cover;
-            width: 88.5px;
-            height: 88.5px;
-            margin-right: 45px; }
-          #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .ascent_logo {
-            background: url("/images/ascent_financing_logo.png") no-repeat center/cover;
-            width: 103px;
-            height: 54px;
-            margin-right: 30px; }
-          #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .climb_credit_logo {
-            background: url("/images/climb_credit_logo.png") no-repeat center/cover;
-            width: 93px;
-            height: 22px;
-            margin-right: 38px; }
-          #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .funding_method_title h3 {
-            font: 20px/22px "Proxima Nova";
-            font-weight: bold; }
-          #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .funding_method_title p {
-            font: 18px/22px "Proxima Nova";
-            font-weight: 400; }
-          #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn {
-            margin-left: auto;
-            border: none;
-            background-color: transparent; }
-            #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn:focus {
-              outline: none; }
-            #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn::after {
-              background: url("/images/arrow_down.svg") no-repeat center/cover;
-              content: '';
-              display: inline-block;
-              height: 11.7px;
-              transform: rotate(0deg);
-              width: 20px; }
-            #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn:not(.collapsed)::after {
-              background: url("/images/arrow_down.svg") no-repeat center/cover;
-              content: '';
-              display: inline-block;
-              height: 11.7px;
-              transform: rotate(180deg);
-              width: 20px; }
-        #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_content {
-          padding: 0 100px 0 50px;
-          font: 16px/22px "Proxima Nova";
-          font-weight: 400; }
-          #wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_content .sub_funding_method_content {
-            font: 14px/22px "Proxima Nova";
-            font-weight: 400; }
-  #wrapper #gauge_your_potential_savings_section {
-    background-color: #505170; }
-    #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container {
-      max-width: 1440px;
-      margin: auto;
-      padding: 70px 140px;
-      position: relative; }
-      #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container h2 {
-        color: #fff;
-        font: 40px/44px "Proxima Nova";
-        font-weight: bold; }
-      #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge {
-        align-items: flex-start;
-        color: #fff;
-        display: flex;
-        justify-content: start;
-        position: relative; }
-        #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .gauge_container {
-          margin-right: 5px;
-          text-align: center;
-          width: 130px; }
-        #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge button {
-          background-color: #3A6C92;
-          border: none;
-          color: #fff;
-          height: 41px;
-          margin-top: 15px;
-          position: relative;
-          width: 100%; }
-          #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge button:focus {
-            outline: none; }
-        #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .gauge_indicator {
-          background: #D9D9D9;
-          border: none;
-          display: inline-block;
-          height: 50px;
-          position: absolute;
-          top: 35px;
-          left: 130px;
-          width: 5px; }
-          #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .gauge_indicator::after {
-            background-color: #D9D9D9;
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            content: '';
-            top: 48px;
-            left: -4.55px;
-            position: absolute; }
-        #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .early_reg_btn {
-          position: relative;
-          background-color: #05aae1; }
-          #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .early_reg_btn::before {
-            background: #05aae1;
-            border-radius: 50%;
-            border: none;
-            content: '';
-            display: inline-block;
-            height: 50px;
-            left: -10px;
-            position: absolute;
-            top: -5px;
-            width: 50px; }
-        #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .active {
-          background-color: #05aae1; }
-        #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .pay_in_full_btn {
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px; }
-        #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge p {
-          font: 12px/16px "Proxima Nova";
-          font-weight: 300;
-          margin-top: 20px;
-          text-align: left;
-          width: 80%; }
-        #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .savings {
-          margin: 15px 30px; }
-          #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .savings p {
-            font: 18px/22px "Proxima Nova";
-            font-weight: 300; }
-          #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .savings .savings_value {
-            font: 26px/30px "Proxima Nova";
-            font-weight: bold;
-            display: block;
-            text-align: center; }
-      #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .gauge_savings_note {
-        color: #fff;
-        font: 10px/14px "Proxima Nova";
-        font-weight: 300;
-        width: 538px; }
-      #wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .cat_logo {
-        background: url("/images/border_cat.png") no-repeat center/cover;
-        width: 31px;
-        height: 20px;
-        position: absolute;
-        bottom: -7px;
-        left: 800px; }
-  #wrapper #fund_your_bootcamp_section {
-    background-color: #fff; }
-    #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container {
-      padding: 78px 140px;
-      margin: auto;
-      max-width: 1440px; }
-      #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container h2 {
-        color: #333333;
-        font: 40px/44px "Proxima Nova";
-        font-weight: bold; }
-      #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content {
-        display: flex; }
-        #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content p {
-          align-items: left;
-          font: 18px/27px "Proxima Nova";
-          font-weight: 400;
-          letter-spacing: 0.6px;
-          margin-top: 62px;
-          width: 271px; }
-        #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table {
-          margin-left: 50px;
-          border: none; }
-          #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table th {
-            width: 150px;
-            text-align: center; }
-          #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table td {
-            font: 16px/16px "Proxima Nova";
-            font-weight: 400;
-            height: 62px;
-            padding: 10px 20px;
-            width: 150px; }
-          #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table .table_grayed_rows {
-            background-color: #c4c4c4; }
-          #wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table .knock_off_price {
-            font: 12px/16px "Proxima Nova";
-            font-weight: 400;
-            text-align: center;
-            max-width: 85px !important; }
-  #wrapper #thinking_about_funding_section {
-    background-color: #505170; }
-    #wrapper #thinking_about_funding_section .thinking_about_funding_container {
-      margin: auto;
-      max-width: 1440px;
-      padding: 77px 140px; }
-      #wrapper #thinking_about_funding_section .thinking_about_funding_container h2 {
-        color: #fff;
-        font: 40px/48px "Proxima Nova";
-        font-weight: bold;
-        width: 559px; }
-      #wrapper #thinking_about_funding_section .thinking_about_funding_container p {
-        color: #fff;
-        font: 18px/27px "Proxima Nova";
-        font-weight: 400;
-        width: 612px;
-        margin: 30px 0; }
-      #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp {
-        align-items: center;
-        display: flex;
-        width: 652px;
-        justify-content: space-between; }
-        #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .speak_to_admission_logo {
-          background: url("/images/speak_to_admissions.png") no-repeat center/cover;
-          width: 191px;
-          height: 152px; }
-        #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .apply_to_program_logo {
-          background: url("/images/apply_to_your_program_get_accepted.png") no-repeat center/cover;
-          width: 173px;
-          height: 175px; }
-        #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .secure_funding_logo {
-          background: url("/images/secure_your_funding_methods.png") no-repeat center/cover;
-          width: 152px;
-          height: 152px; }
-        #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .start_coding_bootcamp_logo {
-          background: url("/images/start_coding_bootcamp.png") no-repeat center/cover;
-          width: 152px;
-          height: 152px;
-          margin-top: 20px; }
-        #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp div h3 {
-          font: 20px/0 "Proxima Nova";
-          font-weight: bold;
-          color: #fff;
-          margin-top: 20px; }
-        #wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp div p {
-          color: #fff;
-          font-weight: 400;
-          font: 18px/27px "Proxima Nova";
-          text-align: left;
-          width: 407px; }
-  #wrapper #top_tech_names_section {
-    background-color: #f8faff; }
-    #wrapper #top_tech_names_section .top_tech_names_container {
-      margin: auto;
-      max-width: 1440px;
-      padding: 70px 140px; }
-      #wrapper #top_tech_names_section .top_tech_names_container h2 {
-        color: #333333;
-        font: 40px/48px "Proxima Nova";
-        font-weight: bold; }
-      #wrapper #top_tech_names_section .top_tech_names_container .tech_logos {
-        background: url("/images/tech_logos.png") no-repeat center/cover;
-        width: 678px;
-        height: 117px;
-        margin-top: 63px; }
-  #wrapper #testimonial_section {
-    background-color: #fff; }
-    #wrapper #testimonial_section .testimonial_container {
-      max-width: 1440px;
-      padding: 78px 162px;
-      margin: auto; }
-      #wrapper #testimonial_section .testimonial_container .testimony {
-        background: url("/images/quotation_mark.png") no-repeat center;
-        width: 676px; }
-        #wrapper #testimonial_section .testimonial_container .testimony h2 {
-          font: 31px/34px "Proxima Nova";
-          font-weight: bold;
-          color: #333333;
-          letter-spacing: 0.6px; }
-        #wrapper #testimonial_section .testimonial_container .testimony .profile_container {
-          display: flex;
-          margin-top: 21px; }
-          #wrapper #testimonial_section .testimonial_container .testimony .profile_container .profile_photo {
-            width: 49px;
-            height: 56px;
-            background-color: #C4C4C4;
-            border-radius: 5px;
-            margin-right: 20px; }
-          #wrapper #testimonial_section .testimonial_container .testimony .profile_container .profile {
-            display: flex;
-            flex-direction: column; }
-            #wrapper #testimonial_section .testimonial_container .testimony .profile_container .profile .profile_name {
-              font: 19px/23px "Proxima Nova";
-              font-weight: bold;
-              color: #333333; }
-            #wrapper #testimonial_section .testimonial_container .testimony .profile_container .profile .profile_position {
-              font: 16px/20px "Proxima Nova";
-              font-weight: 400;
-              color: #333333; }
-  #wrapper #faqs_section {
-    background-color: #f8faff; }
-    #wrapper #faqs_section .faqs_container {
-      max-width: 1440px;
-      padding: 70px 130px;
-      margin: auto; }
-      #wrapper #faqs_section .faqs_container h2 {
-        font: 32px/36px "Proxima Nova";
-        font-weight: bold;
-        margin-bottom: 35px; }
-      #wrapper #faqs_section .faqs_container .faqs_question_header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; }
-        #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn {
-          margin-left: auto;
-          border: none;
-          background-color: transparent; }
-          #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn:focus {
-            outline: none; }
-          #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn::after {
-            background: url("/images/arrow_down.svg") no-repeat center/cover;
-            content: '';
-            width: 20px;
-            height: 11.7px;
-            display: inline-block;
-            transform: rotate(0deg); }
-          #wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn:not(.collapsed)::after {
-            background: url("/images/arrow_down.svg") no-repeat center/cover;
-            content: '';
-            width: 20px;
-            height: 11.7px;
-            display: inline-block;
-            transform: rotate(180deg); }
-      #wrapper #faqs_section .faqs_container .faqs_question_content {
-        width: 677px;
-        background-color: #fff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 35px 60px;
-        margin-bottom: 15px; }
-  #wrapper footer {
-    background-color: #333333; }
-    #wrapper footer .footer_container {
-      max-width: 1440px;
-      padding: 60px 120px;
-      margin: auto;
-      color: #fff; }
-      #wrapper footer .footer_container .upper_footer {
-        display: flex;
-        padding-bottom: 25px;
-        border-bottom: 1px solid #a5a3a3; }
-        #wrapper footer .footer_container .upper_footer .upper_footer_item {
-          margin-right: 50px; }
-          #wrapper footer .footer_container .upper_footer .upper_footer_item a {
-            color: #fff; }
-        #wrapper footer .footer_container .upper_footer .upper_footer_form {
-          margin-left: auto;
-          width: 406px; }
-          #wrapper footer .footer_container .upper_footer .upper_footer_form h4 {
-            font: 16px/28px "Proxima Nova";
-            font-weight: 300; }
-          #wrapper footer .footer_container .upper_footer .upper_footer_form form {
-            display: flex;
-            margin-bottom: 20px; }
-            #wrapper footer .footer_container .upper_footer .upper_footer_form form .email_input {
-              height: 50px;
-              background-color: #fff;
-              width: 406px;
-              border: none;
-              border-radius: 10px;
-              padding: 15px 20px; }
-            #wrapper footer .footer_container .upper_footer .upper_footer_form form .submit_btn {
-              width: 109px;
-              height: 50px;
-              border: 1px solid #fff;
-              border-radius: 10px;
-              color: #fff;
-              font: 14px/18px "Proxima Nova";
-              font-weight: bold;
-              letter-spacing: 0.6px;
-              background-color: transparent;
-              margin-left: 10px; }
-          #wrapper footer .footer_container .upper_footer .upper_footer_form p {
-            font: 10px/17px "Proxima Nova";
-            font-weight: 300; }
-            #wrapper footer .footer_container .upper_footer .upper_footer_form p a {
-              color: #05aae1; }
-      #wrapper footer .footer_container .lower_footer {
-        height: 50px;
-        margin-top: 30px; }
-        #wrapper footer .footer_container .lower_footer p {
-          font: 16px/26px "Proxima Nova";
-          font-weight: 300; }
-          #wrapper footer .footer_container .lower_footer p span {
-            font-weight: bold; }
-        #wrapper footer .footer_container .lower_footer a {
-          color: #05aae1; }
+  margin: 0 auto;
+}
+#wrapper header .sub_nav {
+  align-items: center;
+  background-color: #272634;
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  padding: 0 40px;
+  width: 100%;
+}
+#wrapper header .sub_nav .cohort_text {
+  color: #fff;
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+}
+#wrapper header .sub_nav .sub_nav_actions {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+#wrapper header .sub_nav .sub_nav_actions .cohort_phone_number {
+  color: #05aae1;
+  font: 16px/20px "Proxima Nova";
+  font-weight: 400;
+}
+#wrapper header .sub_nav .sub_nav_actions .cohort_phone_number:before {
+  background: url("/images/phone_icon.svg") no-repeat center;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  margin-right: 10px;
+  width: 16px;
+}
+#wrapper header .sub_nav .sub_nav_actions .talk_to_us_btn {
+  background-color: transparent;
+  border: 1px solid #05aae1;
+  color: #fff;
+  font: 16px/20px "Proxima Nova";
+  font-weight: 400;
+  height: 36px;
+  margin-left: 66px;
+  width: 120px;
+}
+#wrapper header nav {
+  align-items: center;
+  background-color: #1d1f21;
+  display: flex;
+  height: 56px;
+  padding: 0 40px 0 30px;
+}
+#wrapper header nav .coding_dojo_logo {
+  background: url("/images/coding_dojo_logo.png") no-repeat center;
+  display: inline-block;
+  height: 30px;
+  width: 99px;
+}
+#wrapper header nav .nav_spacer {
+  flex-grow: 1;
+}
+#wrapper header nav .nav_links {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 180px;
+}
+#wrapper header nav .nav_links a {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font: 16px/20px "Proxima Nova";
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  margin-right: 45px;
+}
+#wrapper header nav .nav_links a::after {
+  background: url("/images/caret_down.svg") no-repeat center;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  margin-left: 10px;
+  width: 11px;
+}
+#wrapper header nav a {
+  color: #fff;
+  margin-right: 66px;
+}
+#wrapper header nav .nav_apply_btn {
+  margin-left: auto;
+  width: 120px;
+  height: 36px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  background-color: #05aae1;
+}
+#wrapper header .header_banner {
+  background: url("/images/financing_101_banner.png") no-repeat center / cover;
+  background-color: #1d1f21;
+  padding: 140px;
+}
+#wrapper header .header_banner h1 {
+  width: 575px;
+  height: 147px;
+  color: #fff;
+  font: 64px/74px "Proxima Nova";
+  font-weight: 700;
+}
+#wrapper header .header_banner p {
+  color: #fff;
+  width: 456px;
+  height: 54px;
+  font: 18px/24px "Proxima Nova";
+  font-weight: 400;
+}
+#wrapper #sticky_card_container {
+  margin: auto;
+  position: fixed;
+  top: 200px;
+  right: 13%;
+}
+#wrapper #sticky_card_container .sticky_side_card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  height: 441px;
+  padding: 60px 70px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 406px;
+  z-index: 2;
+}
+#wrapper #sticky_card_container .sticky_side_card h2 {
+  color: #333333;
+  font: 40px/45px "Proxima Nova";
+  font-weight: bold;
+}
+#wrapper #sticky_card_container .sticky_side_card p {
+  font: 16px/22px "Proxima Nova";
+  font-weight: 400;
+  color: #333333;
+  margin: 20px 0 35px 0;
+}
+#wrapper #sticky_card_container .sticky_side_card .chat_with_admission_btn {
+  width: 100%;
+  height: 65px;
+  color: #fff;
+  font: 16px/20px "Proxima Nova";
+  font-weight: bold;
+  border: none;
+  background-color: #05aae1;
+  border-radius: 3px;
+}
+#wrapper #funding_method_section {
+  background-color: #f8faff;
+}
+#wrapper #funding_method_section .funding_method_container {
+  max-width: 1440px;
+  padding: 90px 140px;
+  margin: auto;
+}
+#wrapper #funding_method_section .funding_method_container h2 {
+  color: #333333;
+  font: 40px/44px "Proxima Nova";
+  font-weight: 700;
+  width: 600px;
+  margin-bottom: 40px;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content {
+  width: 677px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header {
+  display: flex;
+  align-items: center;
+  padding: 0 47px 0 50px;
+  width: 100%;
+  height: 130px;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .pay_in_full_logo {
+  background: url('/images/PayInFull.png') no-repeat center / cover;
+  width: 88.5px;
+  height: 88.5px;
+  margin-right: 45px;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .installment_plans_logo {
+  background: url('/images/installment_plans.png') no-repeat center / cover;
+  width: 88.5px;
+  height: 88.5px;
+  margin-right: 45px;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .ascent_logo {
+  background: url('/images/ascent_financing_logo.png') no-repeat center / cover;
+  width: 103px;
+  height: 54px;
+  margin-right: 30px;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .climb_credit_logo {
+  background: url('/images/climb_credit_logo.png') no-repeat center / cover;
+  width: 93px;
+  height: 22px;
+  margin-right: 38px;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .funding_method_title h3 {
+  font: 20px/22px "Proxima Nova";
+  font-weight: bold;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .funding_method_title p {
+  font: 18px/22px "Proxima Nova";
+  font-weight: 400;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn:focus {
+  outline: none;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn::after {
+  background: url('/images/arrow_down.svg') no-repeat center / cover;
+  content: '';
+  display: inline-block;
+  height: 11.7px;
+  transform: rotate(0deg);
+  width: 20px;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_header .expand_btn:not(.collapsed)::after {
+  background: url('/images/arrow_down.svg') no-repeat center / cover;
+  content: '';
+  display: inline-block;
+  height: 11.7px;
+  transform: rotate(180deg);
+  width: 20px;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_content {
+  padding: 0 100px 0 50px;
+  font: 16px/22px "Proxima Nova";
+  font-weight: 400;
+}
+#wrapper #funding_method_section .funding_method_container .funding_methods_content .funding_method_content .sub_funding_method_content {
+  font: 14px/22px "Proxima Nova";
+  font-weight: 400;
+}
+#wrapper #gauge_your_potential_savings_section {
+  background-color: #505170;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 70px 140px;
+  position: relative;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container h2 {
+  color: #fff;
+  font: 40px/44px "Proxima Nova";
+  font-weight: bold;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge {
+  align-items: flex-start;
+  color: #fff;
+  display: flex;
+  justify-content: start;
+  position: relative;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .gauge_container {
+  margin-right: 5px;
+  text-align: center;
+  width: 130px;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge button {
+  background-color: #3A6C92;
+  border: none;
+  color: #fff;
+  height: 41px;
+  margin-top: 15px;
+  position: relative;
+  width: 100%;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge button:focus {
+  outline: none;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .gauge_indicator {
+  background: #D9D9D9;
+  border: none;
+  display: inline-block;
+  height: 50px;
+  position: absolute;
+  top: 35px;
+  left: 130px;
+  width: 5px;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .gauge_indicator::after {
+  background-color: #D9D9D9;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  content: '';
+  top: 48px;
+  left: -4.55px;
+  position: absolute;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .early_reg_btn {
+  position: relative;
+  background-color: #05aae1;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .early_reg_btn::before {
+  background: #05aae1;
+  border-radius: 50%;
+  border: none;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  left: -10px;
+  position: absolute;
+  top: -5px;
+  width: 50px;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .active {
+  background-color: #05aae1;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .pay_in_full_btn {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge p {
+  font: 12px/16px "Proxima Nova";
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: left;
+  width: 80%;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .savings {
+  margin: 15px 30px;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .savings p {
+  font: 18px/22px "Proxima Nova";
+  font-weight: 300;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .savings_gauge .savings .savings_value {
+  font: 26px/30px "Proxima Nova";
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .gauge_savings_note {
+  color: #fff;
+  font: 10px/14px "Proxima Nova";
+  font-weight: 300;
+  width: 538px;
+}
+#wrapper #gauge_your_potential_savings_section .gauge_your_potential_savings_container .cat_logo {
+  background: url('/images/border_cat.png') no-repeat center / cover;
+  width: 31px;
+  height: 20px;
+  position: absolute;
+  bottom: -7px;
+  left: 800px;
+}
+#wrapper #fund_your_bootcamp_section {
+  background-color: #fff;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container {
+  padding: 78px 140px;
+  margin: auto;
+  max-width: 1440px;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container h2 {
+  color: #333333;
+  font: 40px/44px "Proxima Nova";
+  font-weight: bold;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content {
+  display: flex;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content p {
+  align-items: left;
+  font: 18px/27px "Proxima Nova";
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-top: 62px;
+  width: 271px;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table {
+  margin-left: 50px;
+  border: none;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table th {
+  width: 150px;
+  text-align: center;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table td {
+  font: 16px/16px "Proxima Nova";
+  font-weight: 400;
+  height: 62px;
+  padding: 10px 20px;
+  width: 150px;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table .table_grayed_rows {
+  background-color: #c4c4c4;
+}
+#wrapper #fund_your_bootcamp_section .fund_your_bootcamp_container .fund_your_bootcamp_content table .knock_off_price {
+  font: 12px/16px "Proxima Nova";
+  font-weight: 400;
+  text-align: center;
+  max-width: 85px !important;
+}
+#wrapper #thinking_about_funding_section {
+  background-color: #505170;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container {
+  margin: auto;
+  max-width: 1440px;
+  padding: 77px 140px;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container h2 {
+  color: #fff;
+  font: 40px/48px "Proxima Nova";
+  font-weight: bold;
+  width: 559px;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container p {
+  color: #fff;
+  font: 18px/27px "Proxima Nova";
+  font-weight: 400;
+  width: 612px;
+  margin: 30px 0;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp {
+  align-items: center;
+  display: flex;
+  width: 652px;
+  justify-content: space-between;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .speak_to_admission_logo {
+  background: url('/images/speak_to_admissions.png') no-repeat center / cover;
+  width: 191px;
+  height: 152px;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .apply_to_program_logo {
+  background: url('/images/apply_to_your_program_get_accepted.png') no-repeat center / cover;
+  width: 173px;
+  height: 175px;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .secure_funding_logo {
+  background: url('/images/secure_your_funding_methods.png') no-repeat center / cover;
+  width: 152px;
+  height: 152px;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp .start_coding_bootcamp_logo {
+  background: url('/images/start_coding_bootcamp.png') no-repeat center / cover;
+  width: 152px;
+  height: 152px;
+  margin-top: 20px;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp div h3 {
+  font: 20px/0 "Proxima Nova";
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+#wrapper #thinking_about_funding_section .thinking_about_funding_container .steps_to_coding_bootcamp div p {
+  color: #fff;
+  font-weight: 400;
+  font: 18px/27px "Proxima Nova";
+  text-align: left;
+  width: 407px;
+}
+#wrapper #top_tech_names_section {
+  background-color: #f8faff;
+}
+#wrapper #top_tech_names_section .top_tech_names_container {
+  margin: auto;
+  max-width: 1440px;
+  padding: 70px 140px;
+}
+#wrapper #top_tech_names_section .top_tech_names_container h2 {
+  color: #333333;
+  font: 40px/48px "Proxima Nova";
+  font-weight: bold;
+}
+#wrapper #top_tech_names_section .top_tech_names_container .tech_logos {
+  background: url('/images/tech_logos.png') no-repeat center / cover;
+  width: 678px;
+  height: 117px;
+  margin-top: 63px;
+}
+#wrapper #testimonial_section {
+  background-color: #fff;
+}
+#wrapper #testimonial_section .testimonial_container {
+  max-width: 1440px;
+  padding: 78px 162px;
+  margin: auto;
+}
+#wrapper #testimonial_section .testimonial_container .testimony {
+  background: url('/images/quotation_mark.png') no-repeat center;
+  width: 676px;
+}
+#wrapper #testimonial_section .testimonial_container .testimony h2 {
+  font: 31px/34px "Proxima Nova";
+  font-weight: bold;
+  color: #333333;
+  letter-spacing: 0.6px;
+}
+#wrapper #testimonial_section .testimonial_container .testimony .profile_container {
+  display: flex;
+  margin-top: 21px;
+}
+#wrapper #testimonial_section .testimonial_container .testimony .profile_container .profile_photo {
+  width: 49px;
+  height: 56px;
+  background-color: #C4C4C4;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+#wrapper #testimonial_section .testimonial_container .testimony .profile_container .profile {
+  display: flex;
+  flex-direction: column;
+}
+#wrapper #testimonial_section .testimonial_container .testimony .profile_container .profile .profile_name {
+  font: 19px/23px "Proxima Nova";
+  font-weight: bold;
+  color: #333333;
+}
+#wrapper #testimonial_section .testimonial_container .testimony .profile_container .profile .profile_position {
+  font: 16px/20px "Proxima Nova";
+  font-weight: 400;
+  color: #333333;
+}
+#wrapper #faqs_section {
+  background-color: #f8faff;
+}
+#wrapper #faqs_section .faqs_container {
+  max-width: 1440px;
+  padding: 70px 130px;
+  margin: auto;
+}
+#wrapper #faqs_section .faqs_container h2 {
+  font: 32px/36px "Proxima Nova";
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+#wrapper #faqs_section .faqs_container .faqs_question_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+#wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn:focus {
+  outline: none;
+}
+#wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn::after {
+  background: url('/images/arrow_down.svg') no-repeat center / cover;
+  content: '';
+  width: 20px;
+  height: 11.7px;
+  display: inline-block;
+  transform: rotate(0deg);
+}
+#wrapper #faqs_section .faqs_container .faqs_question_header .collapsed_btn:not(.collapsed)::after {
+  background: url('/images/arrow_down.svg') no-repeat center / cover;
+  content: '';
+  width: 20px;
+  height: 11.7px;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+#wrapper #faqs_section .faqs_container .faqs_question_content {
+  width: 677px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 35px 60px;
+  margin-bottom: 15px;
+}
+#wrapper footer {
+  background-color: #333333;
+}
+#wrapper footer .footer_container {
+  max-width: 1440px;
+  padding: 60px 120px;
+  margin: auto;
+  color: #fff;
+}
+#wrapper footer .footer_container .upper_footer {
+  display: flex;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #a5a3a3;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_item {
+  margin-right: 50px;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_item a {
+  color: #fff;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_form {
+  margin-left: auto;
+  width: 406px;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_form h4 {
+  font: 16px/28px "Proxima Nova";
+  font-weight: 300;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_form form {
+  display: flex;
+  margin-bottom: 20px;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_form form .email_input {
+  height: 50px;
+  background-color: #fff;
+  width: 406px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_form form .submit_btn {
+  width: 109px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font: 14px/18px "Proxima Nova";
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  background-color: transparent;
+  margin-left: 10px;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_form p {
+  font: 10px/17px "Proxima Nova";
+  font-weight: 300;
+}
+#wrapper footer .footer_container .upper_footer .upper_footer_form p a {
+  color: #05aae1;
+}
+#wrapper footer .footer_container .lower_footer {
+  height: 50px;
+  margin-top: 30px;
+}
+#wrapper footer .footer_container .lower_footer p {
+  font: 16px/26px "Proxima Nova";
+  font-weight: 300;
+}
+#wrapper footer .footer_container .lower_footer p span {
+  font-weight: bold;
+}
+#wrapper footer .footer_container .lower_footer a {
+  color: #05aae1;
+}
